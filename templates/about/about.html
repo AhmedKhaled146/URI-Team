@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3 style="font-family: initial;">URI: Undergraduate Research Initiative</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ bradcam_area  -->
+
+    <div class="uri_details_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="uri_details_header">
+                        <div class="single_uris white-bg d-flex justify-content-between">
+                            <div class="uris_left d-flex align-items-center">
+                                <div class="thumb">
+                                    <img class="imglogo2" src="{% static 'img/new_img/uri_img.jpg' %}" alt="">
+                                </div>
+                                <div class="uri_info">
+                                    <a href="about_uri.html">
+                                        <h4>Undergraduate Research Initiative</h4>
+                                    </a>
+                                    <div class="links_locat d-flex align-items-center">
+                                        <div class="location">
+                                            <p> <i class="fa fa-map-marker"></i> Tanta University, EGY</p>
+                                        </div>
+                                        <div class="location">
+                                            <p> <i class="fa fa-clock-o"></i> Available Any-Time</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="descript_wrap white-bg">
+                        <div class="single_wrap">
+                            <h4>Who We are URI. </h4>
+                            <p>{{info.Who_We_are_URI}}</p>
+                        </div>
+                        <div class="single_wrap">
+                            <h4>What Do We Care about, Why Did URI Stablish ?</h4>
+                            <p>{{info.What_Do_We_Care_about_Why_Did_URI_Stablish}}</p>
+                        </div>
+                        <div class="single_wrap">
+                            <h4>The Goal Of Scientific Research</h4>
+                            <p> {{info.The_Goal_Of_Scientific_Research}}</p>
+                            <p> {{info.The_Goal_Of_Scientific_Research_2}}</p>
+                            <p> {{info.The_Goal_Of_Scientific_Research_3}}</p>
+                            <p> {{info.The_Goal_Of_Scientific_Research_4}}</p>
+                            <p> {{info.The_Goal_Of_Scientific_Research_5}}</p>
+                            <p> {{info.The_Goal_Of_Scientific_Research_6}}</p>
+                            <p> {{info.The_Goal_Of_Scientific_Research_7}}</p>
+                            <p> {{info.The_Goal_Of_Scientific_Research_8}}</p>
+                            <p> {{info.The_Goal_Of_Scientific_Research_9}}</p>
+                            <p> {{info.The_Goal_Of_Scientific_Research_10}}</p>
+                        </div>
+                        <div class="single_wrap">
+                            <h4>What Will You Benefit From URI ?</h4>
+                            <ul>
+                                <li>First, Be Self-Reliant in Everything .</li>
+                                <li>How Do You Keep Your Research Skill and How Do You Develop It ? </li>
+                                <li>Looking at many useful scientific fields, researching and gathering information
+                                    about them.</li>
+                            </ul>
+                        </div>
+                        <div class="single_wrap">
+                            <h4>Beginning Of The Story</h4>
+                            <p>{{info.Beginning_Of_The_Story}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="uri_sumary">
+                        <div class="summery_header">
+                            <h3 class="">Head of URI team</h3>
+                        </div>
+                        <div class="uri_content">
+                            <ul>
+                                <li>Name: <span>{{hd.name}}</span></li>
+                                <li>Age: <span> {{hd.age}} Years Old</span></li>
+                                <li>Educational Level: <span> Student at {{hd.educational_level}}<sup>th</sup> Faculty of Science, Tanta
+                                        University</span></li>
+                                <li>Live: <span>{{hd.city}}, EGY</span></li>
+                                <li>HeadWord: <span> {{hd.HeadWord}}</span></li>
+                                <li>
+                                    <div>
+                                        <img src="{{hd.image.url}}" alt="TEAM_HEAD" width="100%">
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="share_wrap d-flex">
+                        <span>Share at:</span>
+                        <ul>
+                            <li><a href="https://www.facebook.com/" target="_blank"> <i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.google.com/" target="_blank"> <i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li><a href="https://t.me/joinchat/-mp10D2h23RlOWRk" target="_blank"> <i
+                                        class="fa fa-telegram"></i></a> </li>
+                            <li><a href="#"> <i class="fa fa-envelope"></i></a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

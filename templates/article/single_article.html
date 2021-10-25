@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load static %}
+{% block body %}
+<!-- bradcam_area  -->
+<div class="bradcam_area bradcam_bg_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text">
+                    <h3>{{art.title}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ bradcam_area  -->
+
+<!--================Article Area =================-->
+<section class="blog_area single-post-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto posts-list">
+                <div class="single-post">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="{{art.image.url}}" alt="">
+                    </div>
+                    <div class="blog_details">
+                        <h2> ' {{art.small_description}} '</h2>
+                        <ul class="blog-info-link mt-3 mb-3">
+                            <li> <h4> &nbsp; Section : {{art.type_section}} </h4></a></li>
+                        </ul>
+                        <p class="excert">
+                            {{art.paragraph1}}
+                        </p>
+                        <p>
+                            {{art.paragraph2}}
+                        </p>
+                        <p>
+                            {{art.paragraph3}}
+                        </p>
+                        <p>
+                            {{art.paragraph4}}
+                        </p>
+                        {% if not art.important_qouts %}
+                        {% else %}
+                        <div class="quote-wrapper">
+                            <div class="quotes">
+                                {{art.important_qouts}}
+                            </div>
+                        </div>
+                        {% endif%}
+                    </div>
+                </div>
+                <div class="navigation-top">
+                    <div class="col-lg-4 row">
+                        <h5> - By {{art.owner}}</h5> 
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ Article Area end =================-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 card mb-4  mt-3 mx-auto">
+            <div class="card-body">
+                <!-- comments -->
+                <h2>{{ comments.count }} comments</h2>
+
+                {% for comment in comments %}
+                <div class="comments" style="padding: 10px;">
+                    <p class="font-weight-bold">
+                        {{ comment.name }}
+                        <span class=" text-muted font-weight-normal">
+                            {{ comment.created_on }}
+                        </span>
+                    </p>
+                    {{ comment.body | linebreaks }}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-md-8 card mb-4  mt-3 mx-auto">
+            <div class="card-body">
+                {% if new_comment %}
+                <div class="alert alert-success" role="alert">
+                    Your comment is awaiting moderation
+                </div>
+                {% else %}
+                <h3>Leave a comment</h3>
+                    <form method="post" style="margin-top: 1.3em;">
+                        {% bootstrap_form comment_form %}
+                        <button type="submit" class="boxed-btn3 w-100 mt-2">Submit</button>
+                    </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

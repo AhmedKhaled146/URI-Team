@@ -1,0 +1,15 @@
+.uri_listing_area .uri_lists .single_uris .uris_left .thumbb {
+  float: left;
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+  background: #f5f7fa;
+  margin-right: 25px;
+  border: 1px solid #f0f0f0;
+}
+.art_img {
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+  height: 100%;
+}

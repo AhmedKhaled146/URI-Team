@@ -1,0 +1,9 @@
+.footer {
+  background: #276e5b;
+}
+.header-area .main-header-area.sticky {
+  background: #0096889e;
+}
+.hellotest {
+  background-image: url("{% static 'img/new_img/zoel.jpg' %}");
+}

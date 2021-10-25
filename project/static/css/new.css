@@ -1,0 +1,48 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  .ficon {
+    display: none;
+  }
+}
+
+@media (min-width: 133px) and (max-width: 952px) {
+  .ficon {
+    display: none;
+  }
+  h5 {
+    padding-top: 40px;
+  }
+  .imglogo4 {
+    position: relative;
+  }
+}
+@media (min-width: 133px) and (max-width: 952px) {
+  .imglogo4 {
+    position: relative;
+  }
+}
+.imglogo4 {
+  position: relative;
+  padding-right: 130px;
+}
+.catagory_area .cat_search {
+  margin-bottom: 15px;
+}
+ul li {
+  color: rgb(7, 7, 58);
+  font-size: 25px;
+}
+.imglogo3 {
+  height: 7%;
+}
+.h3 {
+  font-size: 600px;
+}
+.featured_candidates_area .single_candidates .thumb img {
+  height: 120px;
+}
+.uri_details_area .uri_sumary .summery_heade {
+  text-align: center;
+}
+.catagory_area {
+  padding: 70px 273px 40px 10px;
+}
