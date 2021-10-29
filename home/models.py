@@ -10,11 +10,10 @@ class Team_members(models.Model):
     image = models.ImageField(upload_to='photos')
 
     def __str__(self):
-        return self.name
+        return self.section
 
     class Meta:
         verbose_name = ' Add Member'
-        ordering = ['name']
 
 
 class Sections(models.Model):
