@@ -2985,7 +2985,7 @@ h3 {
 
 /* line 27, ../../Arafath/CL/December/235. uri board/HTML/scss/_uri.scss */
 .uri_searcing_wrap::after {
-  background-image: url(../img/uri/1.png);
+  /* background-image: url(../img/uri/1.png); */
   width: 50%;
   height: 100%;
   background-repeat: no-repeat;
@@ -3981,8 +3981,8 @@ h3 {
   /*float: left;*/
   width: 100px;
   height: 110px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+  /* -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; */
   margin-right: 25px;
 }
 
@@ -5913,7 +5913,7 @@ h6 {
 .blog_area a:hover,
 .blog_area a :hover {
   background: -webkit-linear-gradient(131deg, #00d363 0%, #00d363 99%);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   text-decoration: none;
   -webkit-transition: 0.5s;
@@ -5977,7 +5977,7 @@ h6 {
 .single-blog .tag {
   text-align: left;
   display: inline-block;
-  float: left;
+  /* float: left; */
   font-size: 13px;
   font-weight: 300;
   margin-right: 22px;
@@ -7408,7 +7408,7 @@ h6 {
 /* line 76, ../../Arafath/CL/December/235. uri board/HTML/scss/_blog_part.scss */
 .blog_part .single-home-blog .card .card-body a:hover {
   background: -webkit-linear-gradient(131deg, #ff7e5f 0%, #feb47b 99%);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 
@@ -7516,9 +7516,9 @@ h6 {
   -webkit-transition: 0.8s;
   transition: 0.8s;
   background: -webkit-linear-gradient(131deg, #feb47b 0%, #ff7e5f 99%);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: 1s;
+  -webkit-animation: 1s; */
 }
 
 /* line 150, ../../Arafath/CL/December/235. uri board/HTML/scss/_blog_part.scss */
