@@ -90,6 +90,7 @@
                 {% else %}
                 <h3>Leave a comment</h3>
                     <form method="post" style="margin-top: 1.3em;">
+                        {% csrf_token %}
                         {% bootstrap_form comment_form %}
                         <button type="submit" class="boxed-btn3 w-100 mt-2">Submit</button>
                     </form>
